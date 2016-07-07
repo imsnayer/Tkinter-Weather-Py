@@ -25,7 +25,7 @@ def main():
 def grabWeather():
 	state = stateVar.get()
 	global city
-	url = "http://api.wunderground.com/api/204df492f224d7c8/conditions/q/%s/%s.json" % (state, city)
+	url = "http://api.wunderground.com/api/API KEY/conditions/q/%s/%s.json" % (state, city)
 	try:
 		request = urllib2.Request(url)
 		page = urllib2.urlopen(request).read()
